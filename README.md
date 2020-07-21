@@ -1,3 +1,20 @@
+
+Antes de ejecutar la aplicacion, hay que obtener un token que la api de spotify proporciona. Estos son los pasos a seguir
+
+Entrar en esta pagina e iniciar sesion, como si estuvieras en spotify https://developer.spotify.com/dashboard/login
+
+Una vez logeado, hay que ir al apartado de console.
+
+Pincha en cualquier parte del menu de la izquierda. Van a aparecer un listado de metodos con sus endpoints. Clicar en cualquiera
+
+Copiar el OAuth Token. Caduca cada hora, así que si caducara, habria que repetir los pasos anteriores.
+
+Una vez que se tiene el codigo, hay que pegarlo en el archivo spotify.service.ts de la aplicacion (colocarlo despues del Bearer, linea 20). guardar los cambios
+
+Ejecutar el comando npm install para descargarse las librerias de Angular
+
+
+--------------------------------
 # Spotify
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
@@ -25,4 +42,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# spotify
+
