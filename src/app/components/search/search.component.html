@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col">
+        <input #palabra type="text" (keyup)="buscar(palabra.value)" class="form-control" placeholder="Buscar artista">
+    </div>
+</div>
+
+<app-loading class="m-5" *ngIf="loading"></app-loading>
+
+<app-cards [nuevasCanciones]="artistas"></app-cards>
+<!--app-cards es un componente compartido, por lo que alli donde se instancie el app-card 
+hay que enviarle la misma informacion-->
